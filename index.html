@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Brajesh Kumar</title>
+
+</head>
+
+<body>
+  <div class="circuit-bg"></div>
+  <div class="alert" id="browserAlert">
+    For best experience, use Chrome or Edge browser with microphone permissions enabled!
+  </div>
+
+  <div class="container">
+    <div>Brajesh Kumar
+    </div>
+    <p style="text-align: center; margin-bottom: 20px; font-size: 16px;">
+      Website Voice Controller - Just speak website names!
+    </p>
+
+    <div class="status-display">
+      <div id="output">
+        <div class="typewriter">Ready to open websites, Sir.</div>
+      </div>
+
+      <div class="voice-visualizer" id="visualizer" style="display: none;">
+        <div class="wave"></div>
+        <div class="wave"></div>
+        <div class="wave"></div>
+        <div class="wave"></div>
+        <div class="wave"></div>
+        <div class="wave"></div>
+        <div class="wave"></div>
+        <div class="wave"></div>
+        <div class="wave"></div>
+        <div class="wave"></div>
+      </div>
+
+      <div class="website-preview" id="websitePreview">
+        <div id="previewContent"></div>
+      </div>
+
+      <div id="status">System Online • Website Controller: Ready</div>
+
+      <div class="commands-grid">
+        <div class="command-item">"Open YouTube"</div>
+        <div class="command-item">"Open Google"</div>
+        <div class="command-item">"Open Facebook"</div>
+        <div class="command-item">"Open Instagram"</div>
+        <div class="command-item">"Open Twitter"</div>
+        <div class="command-item">"Open LinkedIn"</div>
+        <div class="command-item">"Open Amazon"</div>
+        <div class="command-item">"Open Netflix"</div>
+        <div class="command-item">"Open WhatsApp"</div>
+        <div class="command-item">"Open Gmail"</div>
+        <div class="command-item">"Open GitHub"</div>
+        <div class="command-item">"Open Reddit"</div>
+      </div>
+    </div>
+
+    <div class="controls">
+      <button class="btn" id="startBtn" onclick="activateDNS()">Start Listening</button>
+      <button class="btn" id="stopBtn" onclick="deactivateDNS()" disabled> Stop</button>
+      <button class="btn" onclick="showAllWebsites()">All Websites</button>
+    </div>
+  </div>
+
+  <script src="server.js"></script>
+</body>
+
+</html>
